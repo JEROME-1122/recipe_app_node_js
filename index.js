@@ -4,7 +4,7 @@ const app = express();
 const cors = require("cors");
 const connectDb = require("./myDataBase");
 const recipeRoutes = require("./routes/recipeRoutes");
-
+require("dotenv").config();
 connectDb();
 
 
