@@ -16,4 +16,5 @@ Step 8 - Then create the route using express roter in recipeRouter.js import bth
 
 Step 9 - Schema controller and router completed so import in index.js import express, cors, myDataBase and recipRoute.. cors is middleware  it allow to accept the request from disrrent server  app.use(cors({ origin: "*" })). and call the database. app.use(express.json())  use for parse incoming JSON data from the request body. and app.use("/recipes", recipeRoutes)  use to import all the route in app.
 
+Step 10 - Create a cluster in mongo db and set the mongodb url .env file then process the env file
 
