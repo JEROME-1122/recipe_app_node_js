@@ -2,10 +2,11 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const connectDb = require("./myDataBase");
+const connect = require("./myDataBase");
 const recipeRoutes = require("./routes/recipeRoutes");
-require("dotenv").config();
-connectDb();
+require('dotenv').config();
+
+connect();
 
 
 

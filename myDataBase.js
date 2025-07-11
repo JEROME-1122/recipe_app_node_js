@@ -1,12 +1,14 @@
 const mongoose = require("mongoose");
 
-const connectDb = async () => {
+const connect = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/recipeDB");
+    await mongoose.connect(process.env.DB_LINK);
     console.log("MongoDB connected");
   } catch (error) {
     console.error("DB connection error:", error);
   }
 };
 
-module.exports = connectDb;
+module.exports = connect;
+
+
