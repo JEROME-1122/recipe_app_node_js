@@ -18,3 +18,4 @@ Step 9 - Schema controller and router completed so import in index.js import exp
 
 Step 10 - Create a cluster in mongo db and set the mongodb url .env file then process the env file
 
+Postman document added
