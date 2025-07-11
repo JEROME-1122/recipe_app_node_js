@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "a63d6a68-209b-492d-a229-708bb7c3b050",
+		"name": "recipe_app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46201770"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/recipes/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"chicken Chilly recipe\",\r\n  \"ingredients\": \"Flour, Sugar, Eggs,Salt\",\r\n  \"description\": \"Bake at 180°C for 30 mins\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/recipes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/recipes/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"chicken Chilly recipe\",\r\n  \"ingredients\": \"Flour, Sugar, Eggs,Salt\",\r\n  \"description\": \"Bake at 180°C for 30 mins\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/recipes/687076affe070a1929aec931",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes",
+						"687076affe070a1929aec931"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/recipes/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"chicken Chilly recipe\",\r\n  \"ingredients\": \"Flour, Sugar, Eggs,Salt\",\r\n  \"description\": \"Bake at 180°C for 30 mins\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/recipes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/recipes/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"chicken Chilly recipe Indan\",\r\n  \"ingredients\": \"Flour, Sugar, Eggs,Salt\",\r\n  \"description\": \"Bake at 180°C for 30 mins\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/recipes/68707707fe070a1929aec937",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes",
+						"68707707fe070a1929aec937"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/recipes/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"chicken Chilly recipe Indan\",\r\n  \"ingredients\": \"Flour, Sugar, Eggs,Salt\",\r\n  \"description\": \"Bake at 180°C for 30 mins\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/recipes/68707707fe070a1929aec937",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes",
+						"68707707fe070a1929aec937"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
