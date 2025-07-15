@@ -1,22 +1,27 @@
-
+// index.js
 const express = require("express");
-const app = express();
 const cors = require("cors");
 const connect = require("./myDataBase");
 const recipeRoutes = require("./routes/recipeRoutes");
-require('dotenv').config();
+require("dotenv").config();
+
+const app = express();
+const PORT = process.env.PORT || 4000;
+
 
 connect();
 
-
-
-app.use(cors({ origin: "*" }));
+app.use(cors());
 app.use(express.json());
 
+
+app.get("/", (req, res) => {
+  res.send("API is working.");
+});
 
 
 app.use("/recipes", recipeRoutes);
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("Server running on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

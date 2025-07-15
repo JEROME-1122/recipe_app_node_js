@@ -1,4 +1,3 @@
-
 const express = require("express");
 const router = express.Router();
 const {
@@ -6,13 +5,13 @@ const {
   getAllRecipes,
   getRecipeById,
   updateRecipe,
-  deleteRecipe
+  deleteRecipe,
 } = require("../controllers/recipeController");
 
-router.post("/", createRecipe);
-router.get("/", getAllRecipes);
-router.get("/:id", getRecipeById);
-router.put("/:id", updateRecipe);
-router.delete("/:id", deleteRecipe);
+router.post("/add/", createRecipe);
+router.get("/get/", getAllRecipes);
+router.get("/get/:id", getRecipeById);
+router.put("/update/:id", updateRecipe);
+router.delete("/delete/:id", deleteRecipe);
 
 module.exports = router;
